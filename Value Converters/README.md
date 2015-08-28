@@ -17,3 +17,8 @@ A collection of Value Converters for working with Objects.
 
 - [Using a repeat.for to iterate an Objects properties](object-keys.js)
 - [Using a repeat.for to iterate an Objects values](object-values.js)
+
+### Arrays
+A collection of Value Converters for working with Arrays
+
+- [Sorting an array in a repeat.for](sort-array.js)
