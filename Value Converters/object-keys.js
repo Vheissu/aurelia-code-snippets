@@ -18,8 +18,6 @@ export class ObjectKeysValueConverter {
 
 /**
  * Usage
- * Shows how to use the custom ValueConverter to iterate an objects properties
- * aka its keys.
  *
  * <require from="ObjectKeys"></require>
  * <li repeat.for="prop of myVmObject | objectKeys">${prop}</li>

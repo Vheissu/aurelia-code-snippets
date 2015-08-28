@@ -16,7 +16,6 @@ export class ObjectValuesValueConverter {
 
 /**
  * Usage
- * Shows how to use the custom ValueConverter to iterate an objects values
  *
  * <require from="object-values"></require>
  * <li repeat.for="val of myVmObject | objectValues">${val}</li>
