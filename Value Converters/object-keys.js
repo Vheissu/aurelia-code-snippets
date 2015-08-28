@@ -8,7 +8,7 @@ export class ObjectKeysValueConverter {
         // https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/for...in
         for (let prop in obj) {
             if (obj.hasOwnProperty(prop)) {
-                temp.push(obj[property]);
+                temp.push(prop);
             }
         }
 
