@@ -1,5 +1,5 @@
 // A ValueConverter for iterating an Object's properties inside of a repeat.for in Aurelia
-export class ObjectKeysValueConverter {
+export class ObjectEntriesValueConverter {
     toView(obj) {
         // Create a temporary array to populate with object keys
         let temp = [];
@@ -8,7 +8,7 @@ export class ObjectKeysValueConverter {
         // https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/for...in
         for (let prop in obj) {
             if (obj.hasOwnProperty(prop)) {
-                temp.push(prop);
+                temp.push({key: prop, value: obj[prop]});
             }
         }
 
@@ -19,6 +19,6 @@ export class ObjectKeysValueConverter {
 /**
  * Usage
  *
- * <require from="ObjectKeys"></require>
- * <li repeat.for="prop of myVmObject | objectKeys">${prop}</li>
+ * <require from="ObjectEntries"></require>
+ * <li repeat.for="entry of myVmObject | objectEntries">${entry.key}: ${entry.value}</li>
  */
