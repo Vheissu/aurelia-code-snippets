@@ -9,7 +9,7 @@ var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('build-sass', function() {
-    return gulp.src('src/styles/**/*.scss')
+    return gulp.src('src/sass/**/*.scss')
     .pipe(plumber())
         .pipe(sourcemaps.init())
             .pipe(sass())
