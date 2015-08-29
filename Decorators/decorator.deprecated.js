@@ -21,3 +21,22 @@ export default function deprecated(...args) {
       }
     }
 }
+
+/**
+* Usage
+*
+* import {deprecated} from 'decorator.deprecated';
+*
+* class MyClass {
+*     @deprecated()
+*     myMethod() {
+*
+*     }
+*
+*     @deprecated('Please see changelog for more details.')
+*     myMethod2() {
+*
+*     }
+* }
+*
+*/
