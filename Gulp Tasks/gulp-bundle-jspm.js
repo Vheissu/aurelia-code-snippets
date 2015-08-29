@@ -1,5 +1,8 @@
 var jspm = require('jspm/api');
 
+// TODO: Parse config.js file for JSPM dependencies and then
+// iterate over them to bundle the application.
+
 gulp.task('bundle-js', function(done) {
   jspm.bundle(
     [
