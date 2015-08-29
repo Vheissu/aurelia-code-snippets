@@ -12,6 +12,11 @@ A collection of Value Converters for working with date values.
 ### Times
 A collection of Value Converters for working with time values.
 
+### Currency
+A collection of Value Converters for working with currency values.
+
+- [Locale currency conversion](currency.js)
+
 ### Objects
 A collection of Value Converters for working with Objects.
 
