@@ -6,9 +6,20 @@ gulp.task('bundle-js', function(done) {
       '*',
       'aurelia-bootstrapper',
       'aurelia-dependency-injection',
+      'aurelia-framework',
+      'aurelia-loader-default',
       'aurelia-router',
+      'npm:core-js',
+
+      'aurelia-metadata',
+      'aurelia-task-queue',
+      'aurelia-event-aggregator',
       'aurelia-templating',
-      'aurelia-templating-binding'
+      'aurelia-templating-binding',
+      'aurelia-templating-router',
+      'aurelia-templating-resources',
+      'aurelia-history',
+      'aurelia-history-browser',
     ].join(' + '),
     'bundle/app-bundle.js',
     {inject: true, minify: true}
