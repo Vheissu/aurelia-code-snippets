@@ -1,29 +1,23 @@
-var jspm = require('jspm/api');
+var jspm = require('jspm');
+var builder = jspm.Builder();
 
-// TODO: Parse config.js file for JSPM dependencies and then
-// iterate over them to bundle the application.
+/* Ignore dependencies */
+var ignoreDependencies = [
+  'traceur',
+  'traceur-runtime',
+  'babel',
+  'babel-runtime'
+];
+
+// Iterate all keys in config.js (map: {}) to get dependency names
+// This will form a dependency string that looks like:
+// 'aurelia-framework + aurelia-metadata + aurelia-metadata' and so on...
+var packages = Object.keys(builder.loader.map).filter(function(pkg) {
+    return ignoreDependencies.indexOf(pkg) === -1;
+}).join(' + ');
 
 gulp.task('bundle-js', function(done) {
-  jspm.bundle(
-    [
-      '*',
-      'aurelia-bootstrapper',
-      'aurelia-dependency-injection',
-      'aurelia-framework',
-      'aurelia-loader-default',
-      'aurelia-router',
-      'npm:core-js',
-
-      'aurelia-metadata',
-      'aurelia-task-queue',
-      'aurelia-event-aggregator',
-      'aurelia-templating',
-      'aurelia-templating-binding',
-      'aurelia-templating-router',
-      'aurelia-templating-resources',
-      'aurelia-history',
-      'aurelia-history-browser',
-    ].join(' + '),
+  jspm.bundle(packages,
     'bundle/app-bundle.js',
     {inject: true, minify: true}
   ).then(function () {
