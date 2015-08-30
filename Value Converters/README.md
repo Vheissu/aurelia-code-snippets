@@ -7,6 +7,7 @@ A collection of Value Converts for working with strings.
 - [String to UPPERCASE](string-to-uppercase.js)
 - [String to lowercase](string-to-lowercase.js)
 - [Capitalize every word in a string](string-capitalize.js)
+- [Cut (allows you to remove a character from a string)](string-cut.js)
 
 ### Dates
 A collection of Value Converters for working with date values.
