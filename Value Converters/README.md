@@ -17,6 +17,11 @@ A collection of Value Converters for working with currency values.
 
 - [Locale currency conversion](currency.js)
 
+### Numeric Values
+A collection of Value Converters for working with numeric values.
+
+- [Number to ordinal](numeric-to-ordinal.js)
+
 ### Objects
 A collection of Value Converters for working with Objects.
 
