@@ -4,6 +4,7 @@ export class FilesizeformatValueConverter {
             return value;
         }
 
+        /* Below logic taken from here: https://github.com/sindresorhus/pretty-bytes/blob/master/index.js */
         var bytes = value;
 
     	var unit;
