@@ -2,7 +2,7 @@
 This directory contains a few handy custom Value Converters for the Aurelia Javascript framework.
 
 ## General
-A collection of generical Value Converters
+A collection of generic Value Converters
 
 - [Default value if supplied value is empty or null](default-value.js)
 
@@ -33,6 +33,7 @@ A collection of Value Converters for working with currency values.
 ### Numeric Values
 A collection of Value Converters for working with numeric values.
 
+- [Number is divisible by](numeric-divisibleby.js)
 - [Number to ordinal](numeric-to-ordinal.js)
 
 ### Objects
