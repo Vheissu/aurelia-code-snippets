@@ -35,6 +35,7 @@ A collection of Value Converters for working with numeric values.
 
 - [Number is divisible by](numeric-divisibleby.js)
 - [Number to ordinal](numeric-to-ordinal.js)
+- [Convert a numeric value into a human readable filesize; KB, MB, GB, TB, etc](numeric-filesizeformat.js)
 
 ### Objects
 A collection of Value Converters for working with Objects.
