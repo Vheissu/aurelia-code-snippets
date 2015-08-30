@@ -1,14 +1,18 @@
 ## Aurelia Value Converters
 This directory contains a few handy custom Value Converters for the Aurelia Javascript framework.
 
+## General
+A collection of generical Value Converters
+
+- [Default value if supplied value is empty or null](default-value.js)
+
 ### Strings
-A collection of Value Converts for working with strings.
+A collection of Value Converters for working with strings.
 
 - [String to UPPERCASE](string-to-uppercase.js)
 - [String to lowercase](string-to-lowercase.js)
 - [Capitalize every word in a string](string-capitalize.js)
 - [Cut (allows you to remove a character from a string)](string-cut.js)
-- [Default value if supplied value is empty or null](string-default.js)
 
 ### Dates
 A collection of Value Converters for working with date values.

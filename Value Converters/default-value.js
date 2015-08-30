@@ -19,7 +19,7 @@ export class DefaultValueConverter {
 /**
  * Usage
  *
- * <require from="string-default"></require>
+ * <require from="default-value"></require>
  * stringVal = null;
  * <h1 textContent.bind="stringVal | default:'This is a string value'">This is a string value</h1>
  */
