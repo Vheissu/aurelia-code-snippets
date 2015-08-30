@@ -22,6 +22,7 @@ A collection of Value Converters for working with Objects.
 
 - [Using a repeat.for to iterate an Objects properties](object-keys.js)
 - [Using a repeat.for to iterate an Objects values](object-values.js)
+- [Converting an Object to string](object-to-string.js)
 
 ### Arrays
 A collection of Value Converters for working with Arrays
