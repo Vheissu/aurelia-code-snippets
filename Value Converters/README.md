@@ -38,6 +38,7 @@ A collection of Value Converters for working with numeric values.
 - [Number to ordinal](numeric-to-ordinal.js)
 - [Round a floating point number to a specified decimal place](numeric-floatformat.js)
 - [Convert a numeric value into a human readable filesize; KB, MB, GB, TB, etc](numeric-filesizeformat.js)
+- [Typecast a value into a Number](numeric-to-number.js)
 
 ### Objects
 A collection of Value Converters for working with Objects.
