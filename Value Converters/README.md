@@ -5,7 +5,8 @@ This directory contains a few handy custom Value Converters for the Aurelia Java
 A collection of generic Value Converters
 
 - [Default value if supplied value is empty or null](default-value.js)
-- [Get first item in Array or Object](first-item.js)
+- [Get the first item in Array or Object](first-item.js)
+- [Get the last item in Array or Object](last-item.js)
 
 ### Strings
 A collection of Value Converters for working with strings.
