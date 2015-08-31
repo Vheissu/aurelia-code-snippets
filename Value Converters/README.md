@@ -23,9 +23,7 @@ A collection of Value Converters for working with date values.
 - [Get the day name from a Date string](date-day-name.js)
 - [Get numeric day of the month from a Date string](date-day-number.js)
 - [Get numeric year value from a Date string](date-year.js)
-
-### Times
-A collection of Value Converters for working with time values.
+- [Humanized Time Span](date-timesince.js)
 
 ### Currency
 A collection of Value Converters for working with currency values.
