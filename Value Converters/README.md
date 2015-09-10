@@ -52,3 +52,8 @@ A collection of Value Converters for working with Arrays
 
 - [Sorting an array in a repeat.for](sort-array.js)
 - [Randomly get an item from an Array and return it](array-random.js)
+
+### Debug:
+A collection of Value Converters for debugging.
+
+- [Prints out every value that goes trough it](console-debug.js)
