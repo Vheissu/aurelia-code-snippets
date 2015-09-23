@@ -39,6 +39,7 @@ A collection of Value Converters for working with numeric values.
 - [Round a floating point number to a specified decimal place](numeric-floatformat.js)
 - [Convert a numeric value into a human readable filesize; KB, MB, GB, TB, etc](numeric-filesizeformat.js)
 - [Typecast a value into a Number](numeric-to-number.js)
+- [Convert a numeric value into human words; one, twenty-one, etc](numeric-to-words.js)
 
 ### Objects
 A collection of Value Converters for working with Objects.
