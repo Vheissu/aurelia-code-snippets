@@ -13,21 +13,25 @@ export class SortValueConverter {
      *
      * @return {array} sorted array
      * @example
-     * "item of $parent.results.facets[facet.name] | sort: { property: 'doc_count', direction: 'desc' }"
+     * "item of $parent.results.facets[facet.name] | sort: { property: 'doc_count', direction: 'desc', numeric: true }"
      *
      */
     toView(array, config) {
       return array
-          .sort((val1, val2) => {
+        .sort((val1, val2):boolean|Number => {
             let a = val1;
             let b = val2;
-
+    
             if (config.direction.toLowerCase() !== 'asc' && config.direction.toLowerCase() !== 'ascending') {
               a = val2;
               b = val1;
             }
-            return a[config.property] > b[config.property];
-          });
+            
+            if (config.numeric)
+              return a[config.property] - b[config.property];
+            else
+              return a[config.property] > b[config.property];
+        });
     }
 }
 
@@ -36,5 +40,5 @@ export class SortValueConverter {
  *
  * <require from="sort-array"></require>
  *
- * <template repeat.for="item in array | sort: { property: '<sortable property of item>', direction: '<desc(default)|asc>'"
+ * <template repeat.for="item in array | sort: { property: '<sortable property of item>', direction: '<desc(default)|asc>', numeric: <boolean>"
  */
