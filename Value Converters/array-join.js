@@ -5,7 +5,7 @@
  * separated by the separator
  *
  */
-export class FilterValueConverter {
+export class ArrayJoinValueConverter {
     toView(array, config) {
         let separator = config.separator || ',';
         
