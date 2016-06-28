@@ -6,9 +6,7 @@
  *
  */
 export class ArrayJoinValueConverter {
-    toView(array, config) {
-        let separator = config.separator || ',';
-        
+    toView(array, separator = ',') {
         if (!array || !Array.isArray(array)) {
           return '';
         }
