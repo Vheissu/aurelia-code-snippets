@@ -17,6 +17,7 @@ export function configure(aurelia) {
         './numeric-divisibleby',
         './numeric-filesizeformat',
         './numeric-floatformatg',
+        './numeric-percent',
         './numeric-to-number',
         './numeric-to-ordinal',
         './numeric-to-words',
