@@ -30,6 +30,7 @@ export function configure(aurelia) {
         './string-cut',
         './string-endswith',
         './string-match',
+        './string-slugify',
         './string-to-lowercase',
         './string-to-uppercase',
         './string-truncate'
