@@ -1,6 +1,6 @@
 export class FilesizeformatValueConverter {
     toView(value) {
-        if (isNan(value)) {
+        if (isNaN(value)) {
             return value;
         }
 
